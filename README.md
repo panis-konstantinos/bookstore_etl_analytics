@@ -1,17 +1,17 @@
 # About
 This project is a data pipeline that scrapes data from a fictional bookstore website ([bookstoscrape.com](https://books.toscrape.com/)), processes the data, generates synthetic order data, and loads the data into an SQL Server database. The data is then analyzed using SQL queries, with the final output visualized using a Power BI report.
 
-- **Web Scraping**: Utilized BeautifulSoup and Requests to scrape data from a fictional online bookstore (bookstoscrape.com).
+- **Web Scraping**: Utilized BeautifulSoup and Requests to scrape data from a fictional online bookstore ([bookstoscrape.com](https://books.toscrape.com/)).
 
 - **Data Transformation**: Processed the scraped data by cleaning and organizing it into a structured format suitable for database storage.
 
 - **Synthetic Order Data**: Generated synthetic order data to simulate real-world transactions.
 
-- **SQL Server Integration**: Loaded the transformed and synthetic data into an SQL Server database for further analysis.
+- **SQL Server Integration**: Loaded the transformed and synthetic data into an SQL Server database using pyodbc module for further analysis.
 
 - **SQL Analytics**: Performed analytics on the data by writing SQL queries and creating views to gain insights into sales, product availability, and more.
 
-- **Power BI Reporting**: Developed an interactive Power BI report to visualize key metrics, such as sales trends, product performance, and customer behavior.
+- **Power BI Reporting**: Developed an interactive Power BI report to visualize key metrics, such as top books (based on quantity sold and revenue), stock availabilty and books to promote (high rating, low sales).
 
 # How to Run the Project
 1. **Clone the Repository**
