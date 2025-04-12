@@ -1,0 +1,6 @@
+{
+    "driver": "{YOUR_SQL_DRIVER}",
+    "server": "YOUR_SERVER",
+    "database": "YOUR_DB"
+      
+}
