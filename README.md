@@ -14,27 +14,27 @@ This project is a data pipeline that scrapes data from a fictional bookstore web
 - **Power BI Reporting**: Developed an interactive Power BI report to visualize key metrics, such as sales trends, product performance, and customer behavior.
 
 # How to Run the Project
-1. Clone the Repository
+1. **Clone the Repository**
 ```
 git clone https://github.com/panis-konstantinos/bookstore_etl_analytics.git
 cd bookstore_etl_analytics
 ```
 
-2. Install the required dependencies
+2. **Install the required dependencies**
 ```
 pip install -r requirements.txt
 ```
 
-3. Run scraper.py to scrape the bookstore website, transform the gathered data and generate synthetic order data. You can also skip this step and proceed to step 4, as the data have already been saved in pickle files under the *data* folder.
+3. Run **scraper.py** to scrape the bookstore website, transform the gathered data and generate synthetic order data. You can also skip this step and proceed to step 4, as the data have already been saved in pickle files under the *data* folder.
 
-4. Run *sql_scripts*/db_creation.sql to create database and tables in SQL Server.
+4. Run *sql_scripts*/**db_creation.sql** to create database and tables in SQL Server.
 
-5. Edit config.example.json by changing driver, server and database with your prefered driver (e.g. ODBC Driver 17 for SQL Server), and your server and database. After this you must rename the file as config.json. This file is crucial for connecting to your SQL Server using PyODBC module.
+5. Edit **config.example.json** by changing driver, server and database with your prefered driver (e.g. ODBC Driver 17 for SQL Server), and your server and database. After this you must rename the file as **config.json**. This file is crucial for connecting to your SQL Server using PyODBC module.
 
-6. Run load_db.py to load data into SQL Server database.
+6. Run **load_db.py** to load data into SQL Server database.
 
-7. Run *sql_scripts*/analytics.sql to generate insights from the database.
+7. Run *sql_scripts*/**analytics.sql** to generate insights from the database.
 
-8. Run *sql_scripts*/views.sql to create views of data used in PowerBI.
+8. Run *sql_scripts*/**views.sql** to create views of data used in PowerBI.
 
 9. Visualize the insights in file analytics_report.pdf under folder *PowerBI_report*
