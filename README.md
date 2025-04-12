@@ -35,6 +35,6 @@ pip install -r requirements.txt
 
 7. Run *sql_scripts*/**analytics.sql** to generate insights from the database.
 
-8. Run *sql_scripts*/**views.sql** to create views of data used in PowerBI.
+8. Run *sql_scripts*/**views.sql** to create views of data used in PowerBI. (Optional)
 
 9. Visualize the insights in file analytics_report.pdf under folder *PowerBI_report*
