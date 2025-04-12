@@ -25,7 +25,7 @@ cd bookstore_etl_analytics
 pip install -r requirements.txt
 ```
 
-3. Run **scraper.py** to scrape the bookstore website, transform the gathered data and generate synthetic order data. You can also skip this step and proceed to step 4, as the data have already been saved in pickle files under the *data* folder.
+3. Run **scrapper.py** to scrape the bookstore website, transform the gathered data and generate synthetic order data. You can also skip this step and proceed to step 4, as the data have already been saved in pickle files under the *data* folder.
 
 4. Run *sql_scripts*/**db_creation.sql** to create database and tables in SQL Server.
 
